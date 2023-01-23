@@ -1,0 +1,12 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This directory will contain the backend express server that will serve the Todo CRUD API endpoints.",
+  "main": "api/index.js",
+  "scripts": {
+    "build": "cd server && npm install",
+    "start": "cd server && npm start"
+  },
+  "author": "weaponsforge",
+  "license": "ISC"
+}
