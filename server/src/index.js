@@ -1,5 +1,4 @@
 require('dotenv').config()
-require('./utils/db')
 
 const express = require('express')
 const cors = require('cors')
@@ -38,6 +37,7 @@ app.use((err, req, res, next) => {
 
 if (process.env.DEPLOYMENT_PLATFORM !== 'vercel') {
   app.listen(PORT, () => {
+    require('./utils/db')
     console.log(`listening on http://localhost:${PORT}`)
   })
 }
